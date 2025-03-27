@@ -20,16 +20,7 @@ db.collection("products").get().then((snapshot) => {
         let productDiv = document.createElement("div");
         productDiv.innerHTML = `<h2>${data.name}</h2><p>Price: $${data.price}</p>`;
         productList.appendChild(productDiv);
-    });// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-  apiKey: "AIzaSyBhQR5fI6ifNzafPaEfdD_Ij4lA62AOXdU",
-  authDomain: "sakthi-afda6.firebaseapp.com",
-  projectId: "sakthi-afda6",
-  storageBucket: "sakthi-afda6.firebasestorage.app",
-  messagingSenderId: "201937718923",
-  appId: "1:201937718923:web:cc875018b4bfab70948e8e",
-  measurementId: "G-FLC6TDZGF5"
-};
+    });// For Firebase JS SDK v7.20.0 and late
 });// Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
@@ -51,4 +42,4 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
-
+https://firebase.google.com/docs/web/setup#available-libraries
